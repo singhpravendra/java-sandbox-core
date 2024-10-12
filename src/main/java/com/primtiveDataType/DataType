@@ -1,0 +1,7 @@
+byte, short, int and long data types are used for storing whole numbers.
+
+float and double are used for fractional numbers.
+
+char is used for storing characters(letters).
+
+boolean data type is used for variables that holds either true or false.
