@@ -9,8 +9,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Base64;
 
-import org.apache.commons.codec.binary.Base64;
-
 /**
  * @author pravendra.singh
  *
@@ -24,7 +22,7 @@ public class Base64Covertion {
             //FileInputStream fileInputStreamReader = new FileInputStream(originalFile);
             byte[] bytes = new byte[(int)originalFile.length()];
             fileInputStreamReader.read(bytes);
-            encodedBase64 = new String(Base64.encodeBase64(bytes));
+            encodedBase64 = Base64.getEncoder().encodeToString(bytes);
             System.out.println("encodedBase64 :"+encodedBase64);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -38,7 +36,7 @@ public class Base64Covertion {
         try( FileInputStream fileInputStreamReader = new FileInputStream(originalFile);) {
             byte[] bytes = new byte[(int)originalFile.length()];
             fileInputStreamReader.read(bytes);
-            encodedBase64 = new String(Base64.encodeBase64(bytes));
+            encodedBase64 = Base64.getEncoder().encodeToString(bytes);
             System.out.println("encodedBase64 :"+encodedBase64);
         } catch (FileNotFoundException e) {
             e.printStackTrace();

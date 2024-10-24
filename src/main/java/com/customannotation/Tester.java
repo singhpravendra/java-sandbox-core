@@ -22,6 +22,6 @@ class TestCustomAnnotation1{
 		Hello h=new Hello();
 		Method m=h.getClass().getMethod("sayHello");
 
-		MyAnnotation manno=m.getAnnotation(MyAnnotation.class);
-		System.out.println("value is: "+manno.value());
+		/*MyAnnotation manno=m.getAnnotation(MyAnnotation.class);
+		System.out.println("value is: "+manno.value());*/
 	}}

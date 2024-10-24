@@ -3,8 +3,6 @@
  */
 package com.variableType;
 
-import org.bouncycastle.asn1.cmp.ProtectedPart;
-
 /**
  * @author pravendra.singh
  *

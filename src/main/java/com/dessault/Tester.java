@@ -1,12 +1,15 @@
 /**
  * 
- */
+ *//*
+
 package com.dessault;
 
+*/
 /**
  * @author pravendra.singh
  *
- */
+ *//*
+
 public class Tester {
 
 	static int i=0;
@@ -27,3 +30,4 @@ public class Tester {
 	}
 
 }
+*/
