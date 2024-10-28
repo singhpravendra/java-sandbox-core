@@ -17,6 +17,14 @@ public class MaxAgePerson {
 
         //Max age person name
         persons.stream().max(Comparator.comparing(Person::getAge)).ifPresent(person -> System.out.println(person.getName()));
+
+        //Max age person name
+        Optional<Person> max = persons.stream().max(Comparator.comparing(Person::getAge));
+        System.out.println(max);
+        Optional<String> personName = max.stream().map(Person::getName).findAny();
+        System.out.println(personName);
+
+        //With reduce method - compare
         Optional<Person> reduce = persons.stream().reduce((p1, p2) -> p1.getAge() > p2.getAge() ? p1 : p2);
         System.out.println(reduce);
     }
